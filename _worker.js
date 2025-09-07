@@ -63,6 +63,7 @@ export default {
                 userID = userIDs[0];
                 userIDLow = userIDs[1];
             } else 动态UUID = userID;
+			
 
             if (!userID) {
                 return new Response('请设置你的UUID变量，或尝试重试部署，检查变量是否生效？', {
@@ -4220,3 +4221,4 @@ async function nginx() {
 	`
     return text;
 }
+
